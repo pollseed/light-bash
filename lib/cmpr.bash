@@ -1,3 +1,7 @@
 #!/bin/bash
 
-[ $1 = $2 ] ; echo $?
+if [ -z "$1" ] ; then
+  echo 0
+else 
+  [ "$1" = "$2" ] ; echo $?
+fi
